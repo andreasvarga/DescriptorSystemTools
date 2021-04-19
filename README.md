@@ -23,7 +23,7 @@ The codes have been developed under MATLAB 2015b and have been tested with MATLA
 
 ## License
 
-* See `[LICENSE](https://github.com/andreasvarga/DescriptorSystemTools/blob/main/LICENSE)` for licensing information.
+* See [`LICENSE`](https://github.com/andreasvarga/DescriptorSystemTools/blob/main/LICENSE) for licensing information.
 
 * Please cite `DSTOOLS` as "A. Varga. DSTOOLS - The Descriptor System Tools for MATLAB.
 [https://sites.google.com/view/andreasvarga/home/software/dstools](https://sites.google.com/view/andreasvarga/home/software/dstools), 2019."
