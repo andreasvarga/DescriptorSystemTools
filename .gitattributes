@@ -1,0 +1,21 @@
+# Add any directories, files, or patterns to register as binary files
+
+*.mlx -text -diff -merge
+*.mat -text -diff -merge
+*.fig -text -diff -merge
+*.p -text -diff -merge
+*.slx -text -diff -merge
+*.mdl -text -diff -merge
+
+
+*.mdlp -text -diff -merge
+*.slxp -text -diff -merge
+*.sldd -text -diff -merge
+*.mexa64 -text -diff -merge
+*.mexw64 -text -diff -merge
+*.xlsx -text -diff -merge
+*.docx -text -diff -merge
+*.pdf -text -diff -merge
+*.jpg -text -diff -merge
+*.png -text -diff -merge
+
