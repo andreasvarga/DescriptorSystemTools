@@ -5,7 +5,7 @@ C MATLAB call:
 C   [zf,ni,infdiv,kronr,infe,kronl] = sl_gzero(A,E,B,C,D,tol,scale)
 C
 C Purpose:
-C   To compute the zeros of a descriptro system and the Kronecker
+C   To compute the zeros of a descriptor system and the Kronecker
 C   structure of the system pencil. Set E = [] for standard state-spase
 C   systems. Set D = [] for a system with no direct feedthrough matrix.
 C
@@ -32,7 +32,7 @@ C   A. Varga, May 1999.
 C
 C Revisions:
 C   A. Varga, March, 2002; 13-01-2016.
-C   V. Sima, Dec. 2016.
+C   V. Sima, Dec. 2016, June 2017.
 C
 C **********************************************************************
 C
@@ -224,18 +224,22 @@ C
 C
 C Determine the lengths of working arrays
 C
-      IF( SSTYPE) THEN
+      IF( SSTYPE ) THEN
          CALL AB08NW( EQUIL, N, M, P, A, LDA, B, LDB, C, LDC, D, LDD,
      $                NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL,
      $                INFZ, KRONR, INFE, KRONL, E, LDE, TOL, IWORK,
      $                DUM, -1, INFO )
+         CALL DGEEV( 'No vectors', 'No vectors', N, A, LDA, DUM, DUM,
+     $               DUM, 1, DUM, 1, DUM(2), -1, INFO )
       ELSE
          CALL AG08BD( EQUIL, L, N, M, P, A, LDA, E, LDE, B, LDB, C, LDC,
      $                D, LDD, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE,
      $                NKROL, INFZ, KRONR, INFE, KRONL, TOL, IWORK,
      $                DUM, -1, INFO )
+         CALL DGEGV( 'No vectors', 'No vectors', N, A, LDA, E, LDE, DUM,
+     $               DUM, DUM, DUM, 1, DUM, 1, DUM(2), -1, INFO )
       END IF
-      LDWORK = DUM(1)
+      LDWORK = MAX( DUM(1), DUM(2) )
 C
 C Allocate variable dimension local arrays
 C !Fortran 90/95
