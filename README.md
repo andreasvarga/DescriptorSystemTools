@@ -15,7 +15,7 @@ The User's Guide of the current version of the `DSTOOLS` collection is available
 The above book provides additional information on the mathematical background on rational matrices and descriptor systems,
 and gives detailed descriptions of most of the underlying procedures.
 
-The current release of `DSTOOLS` is version 0.75, dated January 31, 2021.
+The current release of `DSTOOLS` is version 1.0.0.2, dated April 24, 2021.
 
 ## Requirements
 
