@@ -2,7 +2,7 @@ echo on
 % Welcome to DSTools - the Descriptor System Tools.
 % The primary source for this toolbox is
 %
-%     https://bitbucket.org/DSVarga/dstools/downloads/
+%     https://github.com/andreasvarga/DescriptorSystemTools
 %
 % The DSTools collection comprises the M-files and MEX-files in this directory. 
 %
