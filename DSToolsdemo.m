@@ -12,7 +12,7 @@ echo on
 
 pause  % Press any key to continue after pauses.
 
-% The current release of DSTOOLS is version 0.75, dated Februry 12, 2020.
+% The current release of DSTOOLS is version 1.0.0.3, dated April 24, 2021.
 
 % The available funtions in DSTOOLS are:
 %

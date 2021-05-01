@@ -1,5 +1,5 @@
 % DSTOOLS - Descriptor System Tools.
-% Version 1.0.0.2            24-April-2021
+% Version 1.0.0.3            24-April-2021
 % Copyright (c) 2016-2021 by A. Varga
 %
 % Demonstration.
