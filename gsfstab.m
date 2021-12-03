@@ -61,7 +61,7 @@ function [f,info] = gsfstab(a,e,b,poles,sdeg,options)
 %   eigenvalues of (A,E) lying outside Cs. 
 
 %  Author:      A. Varga, 01.02.2016
-%  Revision(s): A. Varga, 04.11.2016, 13.06.2017. 
+%  Revision(s): A. Varga, 04.11.2016, 13.06.2017, 27.11.2021. 
 %
 %  Method:  For a standard system pair (A,I) (for E = []), the Schur method
 %  of [1] is used, while for a generalized system pair (A,E) the 
@@ -387,6 +387,10 @@ while nb
                 Bt(kk,:) = Q2*Bt(kk,:); 
                 At(kk,lcol) = Q2*At(kk,lcol); Et(kk,lcol) = Q2*Et(kk,lcol);  
                 Q(kk,:) = Q2*Q(kk,:); Z(:,kk) = Z(:,kk)*Z2; 
+            elseif Et(kk,kk) < 0
+                At(1:nc,kk) = -At(1:nc,kk);
+                Et(1:nc,kk) = -Et(1:nc,kk);
+                Z(:,kk) = -Z(:,kk);
             end
             [At(i2,i2),Et(i2,i2),Q3,Z3] = ...
                    ordqz(At(i2,i2),Et(i2,i2),eye(nb),eye(nb),select);
