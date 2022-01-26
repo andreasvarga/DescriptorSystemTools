@@ -4,7 +4,7 @@
 
 `DSTOOLS` is a collection of MATLAB functions for the operation on and manipulation of rational transfer-function matrices via their descriptor system realizations. The `DSTOOLS` collection relies on the
 Control System Toolbox and several mex-functions based on the Systems and Control Library
-[SLICOT](http://slicot.org/). The underlying mex-functions have been implemented in collaboration with Vasile Sima.
+[SLICOT](https://github.com/SLICOT/SLICOT-Reference/). The underlying mex-functions have been implemented in collaboration with Vasile Sima.
 
 Many of the implemented functions are based on the computational procedures described in Chapter 10 of the book:
 
