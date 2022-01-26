@@ -13,8 +13,6 @@ Many of the implemented functions are based on the computational procedures desc
 The User's Guide of the current version of the `DSTOOLS` collection is available in the DSTOOLS repository, in the file `dstoolsdoc.pdf` (the documentation of the version V0.71 is available on [arXiv](https://arxiv.org/abs/1707.07140)).  Additionally, the M-files of the functions are self-documenting and a detailed documentation of each function can be obtained online by typing help with the corresponding M-file name.
 The above book provides additional information on the mathematical background on rational matrices and descriptor systems, and gives detailed descriptions of most of the underlying procedures.
 
-The current release of `DSTOOLS` is version 1.0.0.3, dated April 24, 2021.
-
 ## Requirements
 
 The codes have been developed under MATLAB 2015b and have been tested with MATLAB 2016a through 2020b. To use the functions, the Control System Toolbox must be installed in MATLAB running under 64-bit Windows 7, 8, 8.1 or 10.
