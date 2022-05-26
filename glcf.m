@@ -6,8 +6,8 @@ function [sysn,sysm] = glcf(sys,options)
 %               G(lambda) =  C(lambda*E-A) B + D
 %
 %       a left coprime factorization
-%                                              -1
-%               G(lambda) = N(lambda)*M(lambda)   ,
+%                                    -1          
+%               G(lambda) = M(lambda)  *N(lambda)   ,
 % 
 %       where N(lambda) and M(lambda) are proper and stable transfer 
 %       function matrices of two systems SYSN and SYSM, respectively, 
